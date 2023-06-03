@@ -2,7 +2,12 @@
 
 public interface IAssociationConstraint
 {
-    bool IsSatisfied(Association association, AssociableBase source, AssociableBase target, object? qualifier);
+	bool IsSatisfied(
+		Association association,
+		AssociableBase source,
+		AssociableBase target,
+		object? qualifier
+	);
 
-    string Name { get; }
+	string Name { get; }
 }
